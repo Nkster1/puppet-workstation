@@ -25,7 +25,7 @@ profile::base::packages:
 profile::base::classes:
   - myuser
   #- kepass2
-  - divers
+  #- divers
   - docker
 
-myuser::username: 'alex'
+myuser::username: 'niclas'
