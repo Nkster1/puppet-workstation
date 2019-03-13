@@ -13,6 +13,13 @@ role::workstation::profiles:
 profile::base::packages:
   - ubuntu-desktop
   - htop
+  - curl
+  - iotop
+  - gparted
+  - synaptic
+  - apt-xapian-index
+  - keepass2
+  - git-svn
 
 profile::base::classes:
   - myuser
