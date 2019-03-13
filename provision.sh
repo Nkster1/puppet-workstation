@@ -8,4 +8,4 @@ sudo /opt/puppetlabs/bin/puppet module install bashtoni-timezone
 sudo /opt/puppetlabs/bin/puppet module install puppet-archive
 
 echo "Setting up workstation... "
-sudo ./update.sh
+sudo /bin/bash ./update.sh
