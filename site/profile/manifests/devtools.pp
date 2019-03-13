@@ -6,9 +6,9 @@ class profile::devtools ($packages, $classes) {
 
   include $classes
 
-  package { $packages:
-    ensure => installed,
-  }
+#  package { $packages:
+#    ensure => installed,
+#  }
 
   class{'docker::compose':
   ensure => present,
