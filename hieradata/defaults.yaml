@@ -20,6 +20,7 @@ profile::base::packages:
   - apt-xapian-index
   - keepass2
   - git-svn
+  - ntp
 
 profile::base::classes:
   - myuser
