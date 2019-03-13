@@ -11,7 +11,7 @@ role::workstation::profiles:
   - profile::devtools
 
 profile::base::packages:
-  - ubuntu-desktop
+  #- ubuntu-desktop
   - htop
   - curl
   - iotop
@@ -29,7 +29,7 @@ profile::base::classes:
   - docker
 
 profile::devtools::packages:
-  - ubuntu-desktop
+  #- ubuntu-desktop
   - htop
   - curl
   - iotop
