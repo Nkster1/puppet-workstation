@@ -1,0 +1,31 @@
+lookup_options:
+  "^profile::(.*)::classes$": # Regexp: `$classes` parameter of any profile class
+    merge: unique
+  "^profile::(.*)::packages$":
+    merge: unique
+
+roles: role::workstation
+
+role::workstation::profiles:
+  - profile::base
+  - profile::devtools
+
+profile::base::packages:
+  - ubuntu-desktop
+  - htop
+  - curl
+  - iotop
+  - gparted
+  - synaptic
+  - apt-xapian-index
+  - keepass2
+  - git-svn
+  - ntp
+
+profile::base::classes:
+  - myuser
+  - keepass2
+  - divers
+  - docker
+
+myuser::username: 'alex'
