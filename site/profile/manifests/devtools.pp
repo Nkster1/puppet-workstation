@@ -2,7 +2,7 @@
 #
 class profile::devtools ($packages, $classes) {
   # resources
-  require profile:base
+  require profile::base
 
   include $classes
 
