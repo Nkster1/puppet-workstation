@@ -5,7 +5,7 @@ defaults:
 hierarchy:
   - name: "Yaml hierarchy"
     paths:
-      - "hostname/%{facts.networking.hostname}.yaml"
-      - "product/%{facts.dmi.product.name}.yaml"
-      - "manufacturer/%{facts.dmi.manufacturer}.yaml"
+   #   - "hostname/%{facts.networking.hostname}.yaml"
+    #  - "product/%{facts.dmi.product.name}.yaml"
+   #   - "manufacturer/%{facts.dmi.manufacturer}.yaml"
       - "defaults.yaml"
