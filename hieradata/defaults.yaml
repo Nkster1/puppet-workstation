@@ -6,7 +6,7 @@ lookup_options:
 
 roles: role::workstation
 
-role::workstation::profiles:
+role::workstation::profile:
   - profile::base
   - profile::devtools
 
