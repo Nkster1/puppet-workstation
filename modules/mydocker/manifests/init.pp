@@ -7,14 +7,14 @@ class mydocker{
   }
   exec { 'install-docker-2':
     command => "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –",
-    require => Exec['apt-get update']
+    subscribe => Exec['apt-get update']
   }
   exec { 'install-docker-3':
     command => "sudo add-apt-repository deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable",
-    require => Exec['install-docker-2']
+    subscribe => Exec['install-docker-2']
   }
   exec { 'install-docker-4':
     command => "sudo apt-get install docker-ce",
-    require => Exec['install-docker-3']
+    subscribe => Exec['install-docker-3']
   }
 }
