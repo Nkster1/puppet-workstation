@@ -9,3 +9,4 @@ sudo /opt/puppetlabs/bin/puppet module install puppet-archive
 
 echo "Setting up workstation... "
 sudo /bin/bash ./update.sh
+sudo /bin/bash ./docker_setup.sh
