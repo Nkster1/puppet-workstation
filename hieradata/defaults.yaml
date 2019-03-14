@@ -10,7 +10,7 @@ role::workstation::profiles:
   - profile::base
 
 profile::base::packages:
-  #- ubuntu-desktop
+  - ubuntu-desktop
   - htop
   - curl
   - iotop
@@ -27,9 +27,3 @@ profile::base::packages:
 
 profile::base::classes:
   - myuser
-  #- kepass2
-  #- divers
-  #- docker
-
-
-myuser::username: 'niclas'
