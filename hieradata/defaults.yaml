@@ -23,7 +23,7 @@ profile::base::packages:
 
 profile::base::classes:
   - myuser
-  - docker
+  - mydocker
   #- kepass2
   #- divers
   #- docker

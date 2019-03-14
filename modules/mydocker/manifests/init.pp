@@ -1,4 +1,4 @@
-class docker{
+class mydocker{
 
   require myuser
   exec { 'apt-get update':
