@@ -6,6 +6,5 @@ class profile::base( $packages, $classes) {
   include $classes
   include apt
   include stdlib
-  #include wget
-
+  
 }
