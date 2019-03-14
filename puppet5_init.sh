@@ -1,6 +1,7 @@
 #!/bin/sh
  
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+echo "myuser::username: '$(whoami)'" >> ./hieradata/hostname.yaml
 cd ~ && wget https://apt.puppetlabs.com/puppet-release-xenial.deb
 sudo dpkg -i puppet-release-xenial.deb
 sudo apt-get update
