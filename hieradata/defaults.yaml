@@ -26,7 +26,7 @@ profile::base::classes:
   - myuser
   #- kepass2
   #- divers
-  - docker
+  #- docker
 
 profile::devtools::packages:
   #- ubuntu-desktop
@@ -44,6 +44,6 @@ profile::devtools::classes:
   - myuser
   #- kepass2
   #- divers
-  - docker
+  #- docker
 
 myuser::username: 'niclas'
