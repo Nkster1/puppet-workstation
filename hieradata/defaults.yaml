@@ -8,7 +8,6 @@ roles: role::workstation
 
 role::workstation::profiles:
   - profile::base
-  - profile::devtools
 
 profile::base::packages:
   #- ubuntu-desktop
@@ -29,22 +28,5 @@ profile::base::classes:
   #- divers
   #- docker
 
-profile::devtools::packages:
-  #- ubuntu-desktop
-  - htop
-  - curl
-  - iotop
-  - gparted
-  - synaptic
-  - apt-xapian-index
-  - keepass2
-  - git-svn
-  - ntp
-
-profile::devtools::classes:
-  - myuser
-  #- kepass2
-  #- divers
-  #- docker
 
 myuser::username: 'niclas'
