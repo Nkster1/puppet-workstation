@@ -20,10 +20,13 @@ profile::base::packages:
   - keepass2
   - git-svn
   - ntp
+  #stuff for installing docker
+  - apt-transport-https
+  - ca-certificates
+  - software-properties-common
 
 profile::base::classes:
   - myuser
-  - mydocker
   #- kepass2
   #- divers
   #- docker
